@@ -1,220 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>GidOnline</title>
-  <style media="screen">
-    body {
-      background-color: black;
-      color: #63afcc;
-    }
-    .content {
-      background-color: #1d191b;
-      width: 66%;
-      height: 1570px;
-      margin: -15px 17% -4px 17%;
-      position: relative;
-    }
-    .logo {
-      position: absolute;
-      margin: 15px 2px 10px 64px;
-    }
-    .forms {
-      position: absolute;
-      left: 415px;
-      top: 30px;
-    }
-    .pole {
-      margin-top: 7px;
-      width: 335px;
-      height: 25px;
-      background-color: #151415;
-      color: #908a90;
-      font-size: 15px;
-      border: 2px solid #353334;
-      font-size: 10px;
-    }
-    .pole2 {
-      background-color: #353334;
-      color: #908a90;
-      font-weight: 600;
-      width: 100px;
-      height: 30px;
-      border: 2px solid #353334;
-    }
-    ul.werh li {
-      color: #635e63;
-      position: relative;
-      margin: 10px;
-      padding-right: 15px;
-      border-right: 2px solid #908a90;
-      left: 380px;
-      top: 70px;
-      display: inline;
-      font-family: Consolas;
-      font-size: 15px;
-    }
-    ul.werh li.nones {
-      border-right: none;
-    }
-    ul.werh li:hover {
-      color: #909494;
-      box-shadow: 1px 0px 10px -5px white;
-    }
-    .trends {
-      margin-left: 9px;
-    }
-    iframe {
-      position: relative;
-      left: 2px;
-      top: 80px;
-      width: 130px;
-      height: 200px;
-    }
-    .categorues {
-      margin-left: 9px;
-      position: relative;
-    }
-    .categorues > div {
-      position: absolute;
-      width: 130px;
-      height: 30px;
-      background-color: #1f1e1e;
-      color: #9a9e9e;
-      position: relative;
-      left: 2px;
-      top: 83px;
-      display: inline-block;
-      text-align: center;
-      font-family: sans-serif;
-    }
-    .categorues p:hover {
-      background-color: #3c4040;
-      box-shadow: 1px 5px 10px -5px white;
-    }
-    .nowinki {
-      float: left;
-      width: 65%;
-      height: 1090px;
-      position: relative;
-      top: 89px;
-      left: 11px;
-      background-color: #39373a;
-    }
-    .recomendation {
-      position: relative;
-      top: 89px;
-      left: 640px;
-      width: 32%;
-      height: 1090px;
-      background-color: #353533;
-    }
-    .recomendation > iframe {
-      position: relative;
-      top: -1085px;
-      left: 5px;
-      width: 47%;
-      height: 213px;
-    }
-    .nowinki > iframe {
-      position: relative;
-      top: 5px;
-      left: 5px;
-      width: 201px;
-      height: 357px;
-    }
-    .end {
-      position: relative;
-      top: 95px;
-      left: 20px;
-      color: #807d7b;
-      font-size: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>ГидОнлайн - Твой гид в мире кино</title>
+    <style>
+        body {
+            background: linear-gradient(black, white);
+            height: 1850px;
+            font-family: sans-serif;
+            font-size: 15px;
+            color: #545558;
+        }
+        
+        .box {
+            position: relative;
+            background-color: #111;
+            width: 73%;
+            height: 1850px;
+            margin: 0px auto 0px auto;
+        }
+        
+        .logo {
+            width: 280px;
+            height: 80px;
+            position: relative;
+            top: 16.5px;
+            left: 65px;
+        }
+        
+        .poisk {
+            width: 470px;
+            position: relative;
+            top: -42px;
+            left: 430px;
+        }
+        
+        .pole1 {
+            width: 350px;
+            height: 30px;
+            background-color: #080807;
+            border: 2px solid #252525;
+            text-align: left;
+            color: #6a666b;
+        }
+        
+        .poisk2 {
+            background-color: #313030;
+            width: 100px;
+            height: 30px;
+            border: none;
+            color: #bcb7bd;
+            font-weight: 600;
+        }
+        
+        .spisok {
+            width: 450px;
+            height: 20px;
+            position: relative;
+            top: -50px;
+            left: 420px;
+            color: #6b6868;
+        }
+        
+        .spisok li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+        
+        .spisok li:hover {
+            color: #c2c2c7;
+            cursor: default;
+        }
+        
+        .grid {
+            position: relative;
+            top: -45px;
+            margin: 0px auto 0px 10px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 13.75% 13.75% 13.75% 13.75% 13.75% 13.75% 13.75%;
+            grid-template-rows: 220px 30px 30px 30px;
+            background-color: #111;
+            color: #aeafab;
+            padding-top: 8px;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            padding: 40px auto 10px auto;
+        }
+        
+        .grid>div {
+            background-color: #161617;
+            white-space: nowrap;
+            блок может содержать не более одной строки text-align: center;
+            height: 2em;
+            line-height: 2em;
+        }
+        
+        .grid>div:hover {
+            background-color: #525254;
+            transition: 0.5s;
+            box-shadow: 10px 10px 15px #c5c0c5;
+        }
+        
+        .element {
+            position: relative;
+            top: -50px;
+            width: 100%;
+            height: 30px;
+            background-color: #161617;
+            color: #dcdad8;
+            line-height: height;
+            white-space: nowrap;
+            text-align: center;
+            height: 2em;
+            line-height: 2em
+        }
+        
+        .element ul li {
+            list-style: none;
+            display: inline;
+            margin: 0px 40px 0px 40px;
+        }
+        
+        .element ul li:hover {
+            cursor: default;
+            color: white;
+        }
+        
+        .content {
+            display: inline-block;
+            position: relative;
+            top: -40px;
+            width: 100%;
+            height: 1300px;
+            background-color: #161617;
+        }
+        
+        .films {
+            width: 60%;
+            height: 1300px;
+            background-color: #444143;
+        }
+        
+        .recomendation {
+            position: relative;
+            top: -1300px;
+            left: 60.5%;
+            width: 39%;
+            height: 1300px;
+            background-color: #44443e;
+        }
+        
+        .pages {
+            color: #a4a5a1;
+            position: relative;
+            top: 96.5%;
+        }
+        
+        .pages ul li {
+            display: inline-block;
+            background-color: #353235;
+            text-align: center;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        
+        .pages ul li:hover {
+            background-color: #e0dddf;
+            color: #222321;
+        }
+        
+        .foot {
+            text-align: center;
+            margin: -15px auto;
+            width: 100%;
+            height: 25px;
+            background-color: #3a3739;
+            color: #9ca2a2;
+            font-size: 15px;
+        }
+    </style>
 </head>
+
 <body>
-<div class="content">
-  <div class="header">
-    <div class="logo"><img src="https://gidonline.io/im/gidonline.png" alt=""></div>
-    <div class="buuton">
-      <form class="forms" action="#" method="post">
-        <input class="pole" placeholder="Название фильма..." type="text" name="film" value="">
-        <input class="pole2" type="submit" name="poisk" value="Поиск">
-      </form>
-      <ul class="werh">
-        <li>Новинки</li>
-        <li>Прем'єри</li>
-        <li>Навігатор</li>
-        <li class="nones">Випадковий</li>
-      </ul>
-  </div>
+    <div class="box">
+        <div class="head">
+            <div class="logo">
+                <img src="https://gidonline.io/im/gidonline.png" alt="">
+            </div>
+            <div class="poisk">
+                <form method="get" name="searchform" id="searchform" action="https://gidonline.io">
+                    <input class="pole1" placeholder="Название фильма..." type="submit" name="submit" value="Название фильма...">
+                    <button class="poisk2" type="button" name="button">Поиск</button>
+                </form>
+            </div>
+            <div class="spisok">
+                <ul>
+                    <li>Новинки</li>
+                    <li>Прем'єри</li>
+                    <li>Навігатор</li>
+                    <li>Рандомно</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="oxempone">FilmOne</div>
+            <div class="oxempone">FilmTwo</div>
+            <div class="oxempone">FilmThree</div>
+            <div class="oxempone">FilmFour</div>
+            <div class="oxempone">Filmfive</div>
+            <div class="oxempone">FilmSix</div>
+            <div class="oxempone">FilmSeven</div>
+            <div class="oxempone">Вестерн</div>
+            <div class="oxempone">Біографія</div>
+            <div class="oxempone">Боєвик</div>
+            <div class="oxempone">Воєнний</div>
+            <div class="oxempone">Детектив</div>
+            <div class="oxempone">Драма</div>
+            <div class="oxempone">Документальний</div>
+            <div class="oxempone">Історія</div>
+            <div class="oxempone">Комедії</div>
+            <div class="oxempone">Кримінал</div>
+            <div class="oxempone">Мелодрами</div>
+            <div class="oxempone">Музика</div>
+            <div class="oxempone">Мультфільми</div>
+            <div class="oxempone">Пригоди</div>
+            <div class="oxempone">Сімейний</div>
+            <div class="oxempone">Серіали</div>
+            <div class="oxempone">Спорт</div>
+            <div class="oxempone">Триллери</div>
+            <div class="oxempone">Ужаси</div>
+            <div class="oxempone">Фентезі</div>
+            <div class="oxempone">Фантастика</div>
+        </div>
+        <div class="element">
+            <ul>
+                <li>&#10031;</li>
+                <li>Актори</li>
+                <li>Режесер</li>
+                <li>Країна</li>
+                <li>Рік</li>
+                <li>Реєстрація</li>
+                <li>Вхід</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="films">
 
-  <div class="trends">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mprld15og2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/fGChlIImgMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_k32QVDT2YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yxgJclR4dUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TmxofYUKt40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nBXVkqn6HnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ec-XKTaEnG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="categorues">
-    <div><p>Вестерн</p></div>
-    <div><p>Биография</p></div>
-    <div><p>Боевик</p></div>
-    <div><p>Военний</p></div>
-    <div><p>Детектив</p></div>
-    <div><p>Драма</p></div>
-    <div><p>Документальний</p></div>
-    <div><p>История</p></div>
-    <div><p>Комедия</p></div>
-    <div><p>Криминал</p></div>
-    <div><p>Мелодрама</p></div>
-    <div><p>Музыка</p></div>
-    <div><p>Мультфильм</p></div>
-    <div><p>Приключение</p></div>
-    <div><p>Семейный</p></div>
-    <div><p>Сериалы</p></div>
-    <div><p>Спорт</p></div>
-    <div><p>Триллер</p></div>
-    <div><p>Ужасы</p></div>
-    <div><p>Фэнтези</p></div>
-    <div><p>Фантастика</p></div>
-  </div>
-
-  <div class="nowinki">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/WwZtUlnQNmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DI37vH3sZfw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cTlxzxsFbDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/e2RXW_7L1kI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2cOrBLeFTF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vaEA9aGnkX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/P8t2dbJ7YXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/m4UpK_EIrkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FknefxZ8cYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="recomendation">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GTVgADjFyjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KnWtNA0LzR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jeiu7y-a220" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1fC4epLBkQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uoTDsuSgPBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/B-iVfLX2tvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/lhLhK0K__Fo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/EYHv8eJrW2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dTrne8HvWkw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/o5smS7DdD_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="end">
-    <h3>&copy ГидОнлайн - Твой гид в мире кино!</h3>
-    <img src="/img/photo_2020-07-07_06-36-08.jpg" alt="">
-  </div>
-
-  </div>
-  <div></div>
-  <div></div>
-</div>
+                <div class="pages">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>...</li>
+                        <li>Наступна</li>
+                        <li>&#9674;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recomendation"></div>
+        </div>
+        <div class="foot">
+            <p>ГидОнлайн - Твой гид в мире кино
+                <p>
+        </div>
+    </div>
 </body>
+
 </html>
